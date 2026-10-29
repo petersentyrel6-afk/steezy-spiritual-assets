@@ -1,514 +1,280 @@
-```html
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steezy Spiritual Asset Suite | Christ-Centered Digital Ledger</title>
-    
-    <!-- SEO & Search Engine Optimization Meta Tags -->
-    <meta name="description" content="Discover SteezyBTC Derivative 001, Ethos, Pathos, and Logos. Spiritual digital assets founded on divine assistance, immutable ledger architecture, and faith in Jesus Christ. Created by Tyrel Steven Petersen.">
-    <meta name="keywords" content="SteezyBTC, Ethos, Pathos, Logos, Tyrel Steven Petersen, Spiritual Currency, Christ Centered Crypto, Digital Asset Ledger, Latter-day Currency, Genesis Ledger">
-    <meta name="author" content="Tyrel Steven Petersen">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Steezy Spiritual Asset Suite | Latter-Day Digital Assets">
-    <meta property="og:description" content="Immutable spiritual assets backed by divine testimony, sacred ordinances, and faith in Jesus Christ. Free Ethos trial available.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/steezybtc/assets/main/steezybtc_derivative_001.png">
-    <meta property="og:url" content="https://steezybtc.github.io/spiritual-assets/">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Steezy Spiritual Asset Suite">
-    <meta name="twitter:description" content="Anchored in the literal substance and weight of faith in Jesus Christ unto His glory.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/steezybtc/assets/main/steezybtc_derivative_001.png">
-
+    <title>Steezy Spiritual Asset Suite | Digital Faith & Immutable Ledger Architecture</title>
+    <meta name="description" content="Official landing page for the Steezy Spiritual Asset Suite: steezybtc_derivative_001, Ethos, Pathos, and Logos. Created with Divine assistance for the latter-days.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            300: '#fde047',
-                            400: '#facc15',
-                            500: '#eab308',
-                            600: '#ca8a04',
-                        },
-                        cosmic: {
-                            900: '#070913',
-                            800: '#0f172a',
-                            700: '#1e1b4b',
-                            600: '#312e81',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Georgia', 'serif']
+                        steezygold: '#d97706',
+                        steezy dark: '#0f172a'
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #05070f;
-            color: #f1f5f9;
-        }
-        .font-cinzel {
-            font-family: 'Cinzel', serif;
-        }
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gold-border-glow {
-            border: 1px solid rgba(234, 179, 8, 0.3);
-            box-shadow: 0 0 25px rgba(234, 179, 8, 0.15);
-        }
-        .gold-border-glow:hover {
-            border: 1px solid rgba(234, 179, 8, 0.7);
-            box-shadow: 0 0 35px rgba(234, 179, 8, 0.3);
-        }
-        .iridescent-bg {
-            background: linear-gradient(135deg, rgba(30,27,75,0.8) 0%, rgba(15,23,42,0.9) 50%, rgba(49,46,129,0.8) 100%);
-        }
-        .glass-panel {
-            background: rgba(15, 23, 42, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-    </style>
 </head>
-<body class="bg-cosmic-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950">
 
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 glass-panel border-b border-gold-500/20 px-4 lg:px-8 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <i class="fa-solid fa-cross text-gold-400 text-2xl"></i>
-                <span class="font-cinzel text-xl font-bold tracking-wider gold-gradient-text">STEEZY SUITE</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#testimony" class="hover:text-gold-400 transition-colors">Sacred Testimony</a>
-                <a href="#assets" class="hover:text-gold-400 transition-colors">Asset Suite</a>
-                <a href="#claim" class="hover:text-gold-400 transition-colors">Claim Free Ethos</a>
-                <a href="#ledger" onclick="openLedgerModal()" class="hover:text-gold-400 transition-colors">Ledger Inspector</a>
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-black tracking-wider bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent">STEEZY</span>
+                <span class="text-xs uppercase px-2 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded">Covenant Suite</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#testimony" class="hover:text-amber-400 transition">Sacred Testimony</a>
+                <a href="#assets" class="hover:text-amber-400 transition">The Coins</a>
+                <a href="#gateway" class="hover:text-amber-400 transition">Payment Gateway</a>
+                <a href="#ledger" class="hover:text-amber-400 transition">Ledger Verification</a>
             </nav>
-            <a href="#claim" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black font-semibold px-5 py-2.5 rounded-full text-sm transition-all shadow-lg shadow-gold-500/20">
-                Claim Free Ethos
-            </a>
+            <div>
+                <a href="#gateway" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-950 font-bold hover:opacity-90 transition shadow-lg shadow-amber-500/20 text-sm">
+                    Try Ethos Free
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative py-20 lg:py-32 overflow-hidden px-4">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,179,8,0.08)_0,transparent_70%)] pointer-events-none"></div>
-            <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-gold-500/30 text-gold-300 text-xs tracking-widest uppercase font-semibold mb-2">
-                    <i class="fa-solid fa-gem"></i> Immutable Divine Architecture
-                </div>
-                <h1 class="font-cinzel text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-                    Anchored in the Substance of <br>
-                    <span class="gold-gradient-text">Faith in Jesus Christ</span>
-                </h1>
-                <p class="text-slate-300 text-lg sm:text-xl max-w-3xl mx-auto font-light leading-relaxed">
-                    A celestial digital asset ecosystem created with Divine assistance, bridging spiritual integrity, sacred ordinances, and immutable ledger technology for the latter-days.
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 px-6">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.15)_0,transparent_70%)] pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-widest uppercase mb-6">
+                Founded by Tyrel Steven Petersen
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8 leading-tight">
+                Ancora in the True Literal Substance of <span class="bg-gradient-to-r from-amber-400 to-yellow-200 bg-clip-text text-transparent">Faith in Jesus Christ</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Created with Divine assistance to support the transition of the economy to digital currency in the latter-days. Backed by immutable spiritual doctrines, sacred art, and daily-replenished covenant substance.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#gateway" class="px-8 py-4 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+                    Acquire Suite & Test Ethos
+                </a>
+                <a href="master_steezy_genesis_ledger.json" download class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 font-semibold hover:bg-slate-800 transition">
+                    Download Genesis Ledger (.json)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sacred Testimony Section -->
+    <section id="testimony" class="py-20 px-6 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight">The Sacred Testimony</h2>
+                <p class="text-amber-400 text-sm mt-2">Exact Quotation & Spiritual Foundation</p>
+            </div>
+            <blockquote class="bg-slate-950/80 border-l-4 border-amber-500 p-8 rounded-r-2xl shadow-2xl space-y-6 text-slate-300 italic leading-relaxed">
+                <p>
+                    "Specifically we would like to offer the bold claim that these assets are directly related to our spiritual internal (and external) faith in Jesus Christ.
                 </p>
-                <div class="flex flex-wrap justify-center gap-4 pt-4">
-                    <a href="#assets" class="bg-gold-500 hover:bg-gold-400 text-black font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-gold-500/25 flex items-center gap-2">
-                        <i class="fa-solid fa-coins"></i> Explore Assets
+                <p>
+                    Although these claims cannot be validated by any normal means we boldly propose that these coins were created by us with Divine assistance to support the transition of the economy to digital currency in the latter-days.
+                </p>
+                <p>
+                    They are founded on immutable, spiritual doctrines and carry the collective weight of a faithful group of diligent disciples. This includes the full weight, substance, and backing of our faith, repentance, baptism, the laying on of hands for the gift of the Holy Ghost, as well as our spiritual psychedelic experience and collective imagination in God.
+                </p>
+                <p>
+                    The coins will gain momentum and grounding as the end times progress, anchoring us, and all who wish to have a Christ-centered currency, in the true literal substance and weight of our faith in Jesus Christ, within the veil, unto His glory forever.
+                </p>
+                <p>
+                    I personally claim to have seen Jesus Christ himself several times in my dreams, and have had Celestial visions of glory on psychedelics. These truths are self evident in biology and all things denote the living reality of God and His Beloved Son, the Only Begotten, full of grace and truth, even Jesus the Christ. I testify to these things with God as my witness, in the name of His Holy child, even Jesus Christ, amen."
+                </p>
+                <footer class="text-right not-italic font-semibold text-amber-400 pt-4 border-t border-slate-800">
+                    — Tyrel Steven Petersen
+                </footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Asset Suite Grid -->
+    <section id="assets" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">The Steezy Spiritual Asset Suite</h2>
+            <p class="text-slate-400 mt-3 max-w-2xl mx-auto">Four foundational pillars mapped via numerology, image architecture, and ledger immutability.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Asset 1: SteezyBTC Derivative 001 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                <div class="h-56 overflow-hidden relative group">
+                    <img src="298.png" alt="steezybtc_derivative_001" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">STZ-BTC-01</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">steezybtc_derivative_001</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">The foundational monetary anchor bridging decentralized ledger tech with latter-day divine purpose.</p>
+                    </div>
+                    <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
+                        Secure Asset
                     </a>
-                    <button onclick="openLedgerModal()" class="glass-panel border border-gold-500/40 hover:bg-gold-500/10 text-gold-300 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-scroll"></i> Master Ledger JSON
+                </div>
+            </div>
+
+            <!-- Asset 2: Ethos -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                <div class="h-56 overflow-hidden relative group">
+                    <img src="77.jng.jpg" alt="Ethos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">ETHOS</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Ethos (Elthos)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">The moral, spiritual character, covenants, and foundational credibility of the covenant enterprise.</p>
+                    </div>
+                    <a href="#gateway" class="w-full py-2.5 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
+                        Try Free Today
+                    </a>
+                </div>
+            </div>
+
+            <!-- Asset 3: Pathos -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                <div class="h-56 overflow-hidden relative group">
+                    <img src="78.jng.jpg" alt="Pathos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">PATHOS</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Pathos</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">The emotional, experiential, and psychedelic depth of human consciousness connected to God within the veil.</p>
+                    </div>
+                    <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
+                        Secure Asset
+                    </a>
+                </div>
+            </div>
+
+            <!-- Asset 4: Logos -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                <div class="h-56 overflow-hidden relative group">
+                    <img src="79.jpg" alt="Logos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">LOGOS</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Logos</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">The divine logic, order, structural reason, and code-level perfection underlying all creation.</p>
+                    </div>
+                    <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
+                        Secure Asset
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment & Delivery Gateway Section -->
+    <section id="gateway" class="py-24 px-6 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto bg-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold tracking-tight mb-3">Secure Acquisition & Payment Gateway</h2>
+                <p class="text-slate-400 text-sm">Rotating BlueWallet Address Pool Integration & Instant Delivery</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="space-y-4">
+                    <label class="block text-sm font-medium text-slate-300">Select Asset to Acquire</label>
+                    <select id="assetSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
+                        <option value="Ethos">Ethos (Free Trial Available)</option>
+                        <option value="steezybtc_derivative_001">steezybtc_derivative_001</option>
+                        <option value="Pathos">Pathos</option>
+                        <option value="Logos">Logos</option>
+                    </select>
+
+                    <label class="block text-sm font-medium text-slate-300">Your Email for Credential Delivery</label>
+                    <input type="email" id="customerEmail" placeholder="name@domain.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Active BlueWallet Address</span>
+                        <div id="activeAddressDisplay" class="font-mono text-xs text-slate-300 bg-slate-950 p-3 rounded-xl mt-2 break-all border border-slate-800">
+                            bc1qvwkv5qlfqcgcam5cjsl80ykus3mmhnm5xg0mwx
+                        </div>
+                        <p class="text-xs text-slate-400 mt-3">Send exact valuation to receive the raw image file + 1 transaction ledger verification JSON credential.</p>
+                    </div>
+                    <button onclick="rotateAddress()" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded-xl transition">
+                        Rotate Address
                     </button>
                 </div>
             </div>
-        </section>
 
-        <!-- Sacred Testimony Section -->
-        <section id="testimony" class="py-16 px-4 bg-cosmic-800/50 border-y border-gold-500/10">
-            <div class="max-w-4xl mx-auto">
-                <div class="glass-panel rounded-3xl p-8 sm:p-12 gold-border-glow relative">
-                    <i class="fa-solid fa-quote-left text-gold-500/20 text-6xl absolute top-6 left-6"></i>
-                    <div class="relative z-10 space-y-6">
-                        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-center gold-gradient-text">
-                            The Founder's Sacred Testimony
-                        </h2>
-                        <blockquote class="text-slate-200 text-base sm:text-lg italic leading-relaxed text-justify space-y-4 font-serif">
-                            <p>
-                                "Specifically we would like to offer the bold claim that these assets are directly related to our spiritual internal (and external) faith in Jesus Christ.
-                            </p>
-                            <p>
-                                Although these claims cannot be validated by any normal means we boldly propose that these coins were created by us with Divine assistance to support the transition of the economy to digital currency in the latter-days.
-                            </p>
-                            <p>
-                                They are founded on immutable, spiritual doctrines and carry the collective weight of a faithful group of diligent disciples. This includes the full weight, substance, and backing of our faith, repentance, baptism, the laying on of hands for the gift of the Holy Ghost, as well as our spiritual psychedelic experience and collective imagination in God.
-                            </p>
-                            <p>
-                                The coins will gain momentum and grounding as the end times progress, anchoring us, and all who wish to have a Christ-centered currency, in the true literal substance and weight of our faith in Jesus Christ, within the veil, unto His glory forever.
-                            </p>
-                            <p>
-                                I personally claim to have seen Jesus Christ himself several times in my dreams, and have had Celestial visions of glory on psychedelics. These truths are self evident in biology and all things denote the living reality of God and His Beloved Son, the Only Begotten, full of grace and truth, even Jesus the Christ. I testify to these things with God as my witness, in the name of His Holy child, even Jesus Christ, amen."
-                            </p>
-                        </blockquote>
-                        <div class="pt-6 border-t border-gold-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
-                            <div class="text-center sm:text-left">
-                                <p class="font-cinzel font-bold text-gold-400 text-lg">Tyrel Steven Petersen</p>
-                                <p class="text-xs text-slate-400">Founder & Covenant Disciple • Pythagorean Numerology Index: 7</p>
-                            </div>
-                            <div class="text-xs text-gold-300/80 bg-gold-500/10 px-4 py-2 rounded-full border border-gold-500/30">
-                                <i class="fa-solid fa-stamp mr-1"></i> Sealed in Living Faith
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Asset Suite Showcase -->
-        <section id="assets" class="py-20 px-4 max-w-7xl mx-auto">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold gold-gradient-text">
-                    The Four Pillar Assets
-                </h2>
-                <p class="text-slate-400">
-                    Valued not by energy-wasteful proof-of-work mining, but through cryptographic ledger immutability, visual harmonic resonance, and sacred spiritual backing.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <!-- Asset 1: SteezyBTC Derivative 001 -->
-                <div class="glass-panel rounded-2xl p-6 gold-border-glow flex flex-col justify-between space-y-6">
-                    <div class="space-y-4">
-                        <div class="relative group overflow-hidden rounded-xl bg-black border border-gold-500/20 aspect-square">
-                            <!-- High Resolution Embedded Visual Asset -->
-                            <img src="298.png" alt="SteezyBTC Derivative 001" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x600/0f172a/eab308?text=SteezyBTC+Derivative+001'">
-                            <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-gold-300 font-semibold border border-gold-500/30">
-                                STZ-BTC-01
-                            </div>
-                        </div>
-                        <h3 class="font-cinzel text-2xl font-bold text-slate-100">SteezyBTC Derivative 001</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            The foundational anchor bridging decentralized monetary architecture with divine latter-day purpose. Mapped directly with creator numerology and high-density hash visual grounding.
-                        </p>
-                        <div class="bg-cosmic-900/80 p-3 rounded-lg text-xs space-y-1 font-mono text-slate-400">
-                            <p><span class="text-gold-400">Numerology Index:</span> 7 (Tyrel Steven Petersen)</p>
-                            <p><span class="text-gold-400">Valuation Metric:</span> 100,107.94 STZ</p>
-                            <p><span class="text-gold-400">Mining Required:</span> False (Immutable Ledger)</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 pt-2">
-                        <a href="298.png" download="SteezyBTC_Derivative_001.png" class="flex-1 bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 text-xs font-semibold py-3 px-4 rounded-xl border border-gold-500/40 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Image
-                        </a>
-                        <button onclick="downloadJson('STZ-BTC-01')" class="flex-1 glass-panel hover:bg-slate-800 text-slate-300 text-xs font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-code"></i> Backing JSON
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Asset 2: Ethos (Elthos) -->
-                <div class="glass-panel rounded-2xl p-6 gold-border-glow flex flex-col justify-between space-y-6">
-                    <div class="space-y-4">
-                        <div class="relative group overflow-hidden rounded-xl bg-black border border-gold-500/20 aspect-square">
-                            <img src="77.jpg" alt="Ethos (Elthos)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x600/0f172a/eab308?text=Ethos+(Elthos)'">
-                            <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-gold-300 font-semibold border border-gold-500/30">
-                                ETHOS
-                            </div>
-                        </div>
-                        <h3 class="font-cinzel text-2xl font-bold text-slate-100">Ethos (Elthos)</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            The moral, spiritual character, covenants, and foundational credibility of the enterprise. Embedded with faith-weight constants and internal divine harmony.
-                        </p>
-                        <div class="bg-cosmic-900/80 p-3 rounded-lg text-xs space-y-1 font-mono text-slate-400">
-                            <p><span class="text-gold-400">Numerology Index:</span> 7 (Tyrel Steven Petersen)</p>
-                            <p><span class="text-gold-400">Valuation Metric:</span> 100,107.94 STZ</p>
-                            <p><span class="text-gold-400">Spiritual Core:</span> Covenant & Faith Trust</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 pt-2">
-                        <a href="77.jpg" download="Ethos_Elthos.jpg" class="flex-1 bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 text-xs font-semibold py-3 px-4 rounded-xl border border-gold-500/40 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Image
-                        </a>
-                        <button onclick="downloadJson('ETHOS')" class="flex-1 glass-panel hover:bg-slate-800 text-slate-300 text-xs font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-code"></i> Backing JSON
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Asset 3: Pathos -->
-                <div class="glass-panel rounded-2xl p-6 gold-border-glow flex flex-col justify-between space-y-6">
-                    <div class="space-y-4">
-                        <div class="relative group overflow-hidden rounded-xl bg-black border border-gold-500/20 aspect-square">
-                            <img src="78.jpg" alt="Pathos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x600/0f172a/eab308?text=Pathos'">
-                            <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-gold-300 font-semibold border border-gold-500/30">
-                                PATHOS
-                            </div>
-                        </div>
-                        <h3 class="font-cinzel text-2xl font-bold text-slate-100">Pathos</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Represents the emotional, experiential, and psychedelic depth of human consciousness connected to God within the veil. Mapped through chromatic depth variance.
-                        </p>
-                        <div class="bg-cosmic-900/80 p-3 rounded-lg text-xs space-y-1 font-mono text-slate-400">
-                            <p><span class="text-gold-400">Numerology Index:</span> 7 (Tyrel Steven Petersen)</p>
-                            <p><span class="text-gold-400">Valuation Metric:</span> 100,107.94 STZ</p>
-                            <p><span class="text-gold-400">Spiritual Core:</span> Transcendental Experience</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 pt-2">
-                        <a href="78.jpg" download="Pathos.jpg" class="flex-1 bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 text-xs font-semibold py-3 px-4 rounded-xl border border-gold-500/40 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Image
-                        </a>
-                        <button onclick="downloadJson('PATHOS')" class="flex-1 glass-panel hover:bg-slate-800 text-slate-300 text-xs font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-code"></i> Backing JSON
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Asset 4: Logos -->
-                <div class="glass-panel rounded-2xl p-6 gold-border-glow flex flex-col justify-between space-y-6">
-                    <div class="space-y-4">
-                        <div class="relative group overflow-hidden rounded-xl bg-black border border-gold-500/20 aspect-square">
-                            <img src="79.jpg" alt="Logos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x600/0f172a/eab308?text=Logos'">
-                            <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-gold-300 font-semibold border border-gold-500/30">
-                                LOGOS
-                            </div>
-                        </div>
-                        <h3 class="font-cinzel text-2xl font-bold text-slate-100">Logos</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            The divine logic, order, structural reason, and code-level perfection underlying all creation. Formulated from geometric symmetry and compression precision.
-                        </p>
-                        <div class="bg-cosmic-900/80 p-3 rounded-lg text-xs space-y-1 font-mono text-slate-400">
-                            <p><span class="text-gold-400">Numerology Index:</span> 7 (Tyrel Steven Petersen)</p>
-                            <p><span class="text-gold-400">Valuation Metric:</span> 100,107.94 STZ</p>
-                            <p><span class="text-gold-400">Spiritual Core:</span> Divine Reason & Order</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 pt-2">
-                        <a href="79.jpg" download="Logos.jpg" class="flex-1 bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 text-xs font-semibold py-3 px-4 rounded-xl border border-gold-500/40 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Image
-                        </a>
-                        <button onclick="downloadJson('LOGOS')" class="flex-1 glass-panel hover:bg-slate-800 text-slate-300 text-xs font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-colors text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-code"></i> Backing JSON
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Claim Free Ethos Section -->
-        <section id="claim" class="py-20 px-4 bg-gradient-to-b from-cosmic-800/80 to-cosmic-900">
-            <div class="max-w-3xl mx-auto glass-panel rounded-3xl p-8 sm:p-12 gold-border-glow space-y-8">
-                <div class="text-center space-y-3">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 text-gold-300 text-xs font-semibold border border-gold-500/30">
-                        <i class="fa-solid fa-gift"></i> Complimentary Spiritual Token
-                    </div>
-                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold gold-gradient-text">
-                        Try Ethos Free
-                    </h2>
-                    <p class="text-slate-300 text-sm sm:text-base">
-                        Experience firsthand how connecting your digital ledger to Christ-centered faith, moral integrity, and daily replenished substance impacts your life.
-                    </p>
-                </div>
-
-                <form id="ethosForm" onsubmit="handleClaimEthos(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name or Disciple Identity</label>
-                        <input type="text" required placeholder="e.g. John Disciple" class="w-full bg-cosmic-900/90 border border-gold-500/30 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-400 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Email or Digital Wallet Hash</label>
-                        <input type="text" required placeholder="e.g. disciple@covenant.org or 0x..." class="w-full bg-cosmic-900/90 border border-gold-500/30 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-400 text-sm">
-                    </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black font-bold py-4 rounded-xl transition-all shadow-lg shadow-gold-500/20 text-sm uppercase tracking-wider">
-                        <i class="fa-solid fa-certificate mr-2"></i> Generate & Claim Free Ethos Certificate
-                    </button>
-                </form>
-
-                <!-- Dynamic Certificate / Ledger Impact Result -->
-                <div id="ethosResult" class="hidden bg-cosmic-900/90 border border-gold-500/40 rounded-2xl p-6 space-y-4">
-                    <div class="flex items-center gap-3 text-gold-400 font-cinzel text-lg font-bold">
-                        <i class="fa-solid fa-circle-check text-xl"></i> Ethos Certificate Successfully Issued!
-                    </div>
-                    <p class="text-slate-300 text-sm">
-                        Your complimentary Ethos token block has been mapped to your provided identity and recorded into the temporal ledger stream.
-                    </p>
-                    <div class="bg-black/50 p-4 rounded-xl font-mono text-xs text-gold-300 space-y-1 overflow-x-auto">
-                        <p><span class="text-slate-500">Token Standard:</span> ETHOS-FREE-COVENANT</p>
-                        <p><span class="text-slate-500">Holder ID Hash:</span> <span id="resHash">0x8f...3a2</span></p>
-                        <p><span class="text-slate-500">Spiritual Alignment Metric:</span> 100% Christ-Centered</p>
-                        <p><span class="text-slate-500">Daily Replenishment Status:</span> Active via Tyrel Steven Petersen Faith Reserve</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="glass-panel border-t border-gold-500/10 py-8 px-4 text-center text-xs text-slate-500 space-y-2">
-        <p class="font-cinzel text-gold-400 font-semibold text-sm">Steezy Spiritual Asset Suite &copy; 2026</p>
-        <p>Created by Tyrel Steven Petersen with Divine Assistance. All Rights Reserved unto His Glory.</p>
-        <p class="text-[10px] text-slate-600">Hosted on GitHub Pages • Searchable on Google & Global Ledgers</p>
-    </footer>
-
-    <!-- Master Ledger Modal -->
-    <div id="ledgerModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-cosmic-800 border border-gold-500/40 rounded-2xl max-w-4xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl">
-            <div class="p-6 border-b border-gold-500/20 flex items-center justify-between">
-                <h3 class="font-cinzel text-xl font-bold gold-gradient-text flex items-center gap-2">
-                    <i class="fa-solid fa-scroll"></i> Master Genesis Ledger JSON
-                </h3>
-                <button onclick="closeLedgerModal()" class="text-slate-400 hover:text-white text-xl">
-                    <i class="fa-solid fa-xmark"></i>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="triggerFreeTrial()" class="flex-1 py-4 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-slate-950 font-bold transition">
+                    Try Ethos Free Now
                 </button>
-            </div>
-            <div class="p-6 overflow-y-auto font-mono text-xs bg-cosmic-900 text-gold-300/90 leading-relaxed">
-                <pre id="jsonContent" class="whitespace-pre-wrap"></pre>
-            </div>
-            <div class="p-4 border-t border-gold-500/20 flex justify-end gap-3 bg-cosmic-800">
-                <button onclick="copyLedgerJson()" class="bg-gold-500 hover:bg-gold-400 text-black font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-copy"></i> Copy JSON
-                </button>
-                <button onclick="closeLedgerModal()" class="glass-panel hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-xl text-xs">
-                    Close
+                <button onclick="simulateOrder()" class="flex-1 py-4 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+                    Confirm Order & Verify Payment
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- JavaScript Interactions -->
+    <!-- Ledger Verification Section -->
+    <section id="ledger" class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Immutable Ledger Verification</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto mb-8">Inspect the master genesis ledger containing complete transaction hashes, numerology constants, and the sacred testimony.</p>
+        <div class="flex justify-center gap-4">
+            <a href="master_steezy_genesis_ledger.json" target="_blank" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 hover:border-amber-500 text-sm font-semibold transition">
+                View Master JSON Ledger
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Steezy Enterprise & Tyrel Steven Petersen. All rights reserved. Created for the glory of God and Jesus Christ.</p>
+    </footer>
+
+    <!-- Script logic for address rotation & trial -->
     <script>
-        const masterLedger = [
-            {
-                "coin_details": {
-                    "asset_name": "SteezyBTC Derivative 001",
-                    "symbol": "STZ-BTC-01",
-                    "creator": "Tyrel Steven Petersen",
-                    "numerology_index": 7,
-                    "valuation_metric": 100107.94,
-                    "mining_required": false,
-                    "valuation_basis": "Immutable Ledger & Image-To-Architecture Mapping"
-                },
-                "genesis_block": {
-                    "coin": "SteezyBTC Derivative 001",
-                    "symbol": "STZ-BTC-01",
-                    "genesis_timestamp": "2026-10-28T15:24:00.000000",
-                    "creator_numerology": 7,
-                    "ledger_proof_hash": "a4b89f32e9d21c08d98341e3a98762f098d72111fba761e2981048821aef4599",
-                    "image_hash": "7488e0b68ad93b2a3c7e098df12bc443909efd8a221199a098bcfe9982341d00"
-                }
-            },
-            {
-                "coin_details": {
-                    "asset_name": "Ethos",
-                    "symbol": "ETHOS",
-                    "creator": "Tyrel Steven Petersen",
-                    "numerology_index": 7,
-                    "valuation_metric": 100107.94,
-                    "mining_required": false,
-                    "valuation_basis": "Immutable Ledger & Image-To-Architecture Mapping"
-                },
-                "genesis_block": {
-                    "coin": "Ethos",
-                    "symbol": "ETHOS",
-                    "genesis_timestamp": "2026-10-28T15:24:00.000000",
-                    "creator_numerology": 7,
-                    "ledger_proof_hash": "c59d9f12a3219e88d12341e3a98762f098d72111fba761e2981048821aef1188",
-                    "image_hash": "91a82f3219d21c08d98341e3a98762f098d72111fba761e2981048821aef9922"
-                }
-            },
-            {
-                "coin_details": {
-                    "asset_name": "Pathos",
-                    "symbol": "PATHOS",
-                    "creator": "Tyrel Steven Petersen",
-                    "numerology_index": 7,
-                    "valuation_metric": 100107.94,
-                    "mining_required": false,
-                    "valuation_basis": "Immutable Ledger & Image-To-Architecture Mapping"
-                },
-                "genesis_block": {
-                    "coin": "Pathos",
-                    "symbol": "PATHOS",
-                    "genesis_timestamp": "2026-10-28T15:24:00.000000",
-                    "creator_numerology": 7,
-                    "ledger_proof_hash": "e88d12341e3a98762f098d72111fba761e2981048821aef1188c59d9f12a3219",
-                    "image_hash": "d98341e3a98762f098d72111fba761e2981048821aef992291a82f3219d21c08"
-                }
-            },
-            {
-                "coin_details": {
-                    "asset_name": "Logos",
-                    "symbol": "LOGOS",
-                    "creator": "Tyrel Steven Petersen",
-                    "numerology_index": 7,
-                    "valuation_metric": 100107.94,
-                    "mining_required": false,
-                    "valuation_basis": "Immutable Ledger & Image-To-Architecture Mapping"
-                },
-                "genesis_block": {
-                    "coin": "Logos",
-                    "symbol": "LOGOS",
-                    "genesis_timestamp": "2026-10-28T15:24:00.000000",
-                    "creator_numerology": 7,
-                    "ledger_proof_hash": "fba761e2981048821aef1188c59d9f12a3219e88d12341e3a98762f098d72111",
-                    "image_hash": "e2981048821aef992291a82f3219d21c08d98341e3a98762f098d72111fba761"
-                }
-            }
+        const addresses = [
+            "bc1qvwkv5qlfqcgcam5cjsl80ykus3mmhnm5xg0mwx",
+            "bc1qtrfx9x979shmxpdqg3qzxw9ynrjjrm4aa75zkl",
+            "bc1qsrud8a4c80kkg5rdu3nhzzzfs9huq2ghwqfauw",
+            "bc1q5cmecm29adqczpsc747uep7u4w3js2s899zg76",
+            "bc1q09uerf28arxttrmdy9l8na9mjragck2slgwap7",
+            "bc1qfeydcsdkwa0g3tcd8hvwlt2xperlatd2u7e0me",
+            "bc1q0wjjutkwwljqjxyzm4n6mlcvl688dwc27k3gkt",
+            "bc1qg0l4lv5xmulnezrd2p88d8dfqyahhu07a6zkzs",
+            "bc1qhncglef8hr2rnaaw7yqzmv7x7ah29equdgsg65",
+            "bc1qry004lzw56t6uyz3u2npsxfh3gjhxsjqdc673y",
+            "bc1q2tkjmreuv8t9mqsew8l2h0kdvxarym3y6v2ld6",
+            "bc1q3yc2l4qv0506ludxps6kz27rcr8yazcnedr85a",
+            "bc1q75aws84mkhnxvk5uextylztq9twr84g4n8xayh"
         ];
+        let currentIndex = 0;
 
-        function openLedgerModal() {
-            document.getElementById('jsonContent').textContent = JSON.stringify(masterLedger, null, 4);
-            document.getElementById('ledgerModal').classList.remove('hidden');
+        function rotateAddress() {
+            currentIndex = (currentIndex + 1) % addresses.length;
+            document.getElementById('activeAddressDisplay').innerText = addresses[currentIndex];
         }
 
-        function closeLedgerModal() {
-            document.getElementById('ledgerModal').classList.add('hidden');
+        function triggerFreeTrial() {
+            alert("Ethos Free Trial Activated! Your spiritual baseline test has been initiated. Check your life's alignment over the next 7 days in accordance with immutable spiritual doctrine.");
         }
 
-        function copyLedgerJson() {
-            const jsonStr = JSON.stringify(masterLedger, null, 4);
-            const dummy = document.createElement("textarea");
-            document.body.appendChild(dummy);
-            dummy.value = jsonStr;
-            dummy.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummy);
-            alert("Master Genesis Ledger JSON copied to clipboard!");
-        }
-
-        function downloadJson(symbol) {
-            const coinData = masterLedger.find(item => item.coin_details.symbol === symbol) || masterLedger[0];
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(coinData, null, 4));
-            const downloadAnchor = document.createElement('a');
-            downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", `${symbol.toLowerCase()}_backing.json`);
-            document.body.appendChild(downloadAnchor);
-            downloadAnchor.click();
-            downloadAnchor.remove();
-        }
-
-        function handleClaimEthos(e) {
-            e.preventDefault();
-            const randomHash = "0x" + Array.from({length: 32}, () => Math.floor(Math.random()*16).toString(16)).join('');
-            document.getElementById('resHash').textContent = randomHash;
-            document.getElementById('ethosResult').classList.remove('hidden');
+        function simulateOrder() {
+            const email = document.getElementById('customerEmail').value;
+            const asset = document.getElementById('assetSelect').value;
+            if(!email) {
+                alert("Please enter your email address for secure credential delivery.");
+                return;
+            }
+            alert(`Order received for ${asset}! Active payment address ${addresses[currentIndex]} is now monitoring for incoming transfer. Once confirmed, your raw image download and JSON ledger credentials will be dispatched to ${email}.`);
         }
     </script>
 </body>
 </html>
-```
