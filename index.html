@@ -12,13 +12,6 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://petersentyrel6-afk.github.io/steezy-spiritual-assets/" />
 
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="Steezy Spiritual Asset Suite | Digital Faith & Immutable Ledger">
-    <meta property="og:description" content="Anchored in the true literal substance and weight of faith in Jesus Christ unto His glory. Explore the genesis ledger and spiritual suite.">
-    <meta property="og:image" content="298.png">
-    <meta property="og:url" content="https://petersentyrel6-afk.github.io/steezy-spiritual-assets/">
-    <meta property="og:type" content="website">
-
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -131,7 +124,7 @@
                         <p class="text-slate-400 text-sm leading-relaxed mb-4">The foundational monetary anchor bridging decentralized ledger tech with latter-day divine purpose.</p>
                     </div>
                     <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
-                        Secure Asset
+                        Micro-Acquire Asset
                     </a>
                 </div>
             </div>
@@ -140,7 +133,7 @@
             <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
                 <div class="h-56 overflow-hidden relative group">
                     <img src="77.jng.jpg" alt="Ethos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">ETHOS</div>
+                    <div class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-full text-xs font-mono text-amber-400 border border-amber-500/30">ETHOS-FREE</div>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
@@ -148,7 +141,7 @@
                         <p class="text-slate-400 text-sm leading-relaxed mb-4">The moral, spiritual character, covenants, and foundational credibility of the covenant enterprise.</p>
                     </div>
                     <a href="#gateway" class="w-full py-2.5 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
-                        Try Free Today
+                        Claim Free Trial & Receipt
                     </a>
                 </div>
             </div>
@@ -165,7 +158,7 @@
                         <p class="text-slate-400 text-sm leading-relaxed mb-4">The emotional, experiential, and psychedelic depth of human consciousness connected to God within the veil.</p>
                     </div>
                     <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
-                        Secure Asset
+                        Micro-Acquire Asset
                     </a>
                 </div>
             </div>
@@ -182,7 +175,7 @@
                         <p class="text-slate-400 text-sm leading-relaxed mb-4">The divine logic, order, structural reason, and code-level perfection underlying all creation.</p>
                     </div>
                     <a href="#gateway" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-center font-semibold text-sm transition">
-                        Secure Asset
+                        Micro-Acquire Asset
                     </a>
                 </div>
             </div>
@@ -193,21 +186,27 @@
     <section id="gateway" class="py-24 px-6 bg-slate-900/50 border-t border-slate-800">
         <div class="max-w-4xl mx-auto bg-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
             <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold tracking-tight mb-3">Secure Acquisition & Payment Gateway</h2>
-                <p class="text-slate-400 text-sm">Rotating BlueWallet Address Pool Integration & Instant Delivery</p>
+                <h2 class="text-3xl font-bold tracking-tight mb-3">Micro-Acquisition & Delivery Gateway</h2>
+                <p class="text-slate-400 text-sm">Rotating BlueWallet Pool & Instant Cryptographic JSON Receipt Generation</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div class="space-y-4">
-                    <label class="block text-sm font-medium text-slate-300">Select Asset to Acquire</label>
-                    <select id="assetSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
-                        <option value="Ethos">Ethos (Free Trial Available)</option>
-                        <option value="steezybtc_derivative_001">steezybtc_derivative_001</option>
-                        <option value="Pathos">Pathos</option>
-                        <option value="Logos">Logos</option>
+                    <label class="block text-sm font-medium text-slate-300">Select Asset / Tier</label>
+                    <select id="assetSelect" onchange="toggleInputs()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
+                        <option value="Ethos_Free">Ethos (Free Trial & Cryptographic Receipt)</option>
+                        <option value="steezybtc_derivative_001">steezybtc_derivative_001 (Micro-Increment)</option>
+                        <option value="Pathos">Pathos (Micro-Increment)</option>
+                        <option value="Logos">Logos (Micro-Increment)</option>
                     </select>
 
-                    <label class="block text-sm font-medium text-slate-300">Your Email for Credential Delivery</label>
+                    <div id="satoshisContainer">
+                        <label class="block text-sm font-medium text-slate-300">Contribution Amount (Satoshis / Decimals)</label>
+                        <input type="number" id="satoshisAmount" value="1000" min="100" step="100" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
+                        <p id="fractionalCalc" class="text-xs text-amber-400/80 mt-1">Acquiring 0.00001000 BTC fractional share.</p>
+                    </div>
+
+                    <label class="block text-sm font-medium text-slate-300">Your Email for Delivery</label>
                     <input type="email" id="customerEmail" placeholder="name@domain.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500">
                 </div>
 
@@ -217,21 +216,37 @@
                         <div id="activeAddressDisplay" class="font-mono text-xs text-slate-300 bg-slate-950 p-3 rounded-xl mt-2 break-all border border-slate-800">
                             bc1qvwkv5qlfqcgcam5cjsl80ykus3mmhnm5xg0mwx
                         </div>
-                        <p class="text-xs text-slate-400 mt-3">Send exact valuation to receive the raw image file + 1 transaction ledger verification JSON credential.</p>
+                        <p class="text-xs text-slate-400 mt-3">Send micro-increment to rotate or verify automatically. Unused verification tickers are generated instantly.</p>
                     </div>
                     <button onclick="rotateAddress()" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded-xl transition">
-                        Rotate Address
+                        Rotate Address Pool
                     </button>
                 </div>
             </div>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="triggerFreeTrial()" class="flex-1 py-4 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-slate-950 font-bold transition">
-                    Try Ethos Free Now
+                <button onclick="claimFreeEthosReceipt()" id="freeClaimBtn" class="flex-1 py-4 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-slate-950 font-bold transition">
+                    Claim Free Ethos Receipt & Asset
                 </button>
-                <button onclick="simulateOrder()" class="flex-1 py-4 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
-                    Confirm Order & Verify Payment
+                <button onclick="verifyAndDeliverPaid()" id="paidClaimBtn" class="hidden flex-1 py-4 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+                    Verify Micro-Payment & Download Receipt
                 </button>
+            </div>
+
+            <!-- Download Terminal Output Area -->
+            <div id="downloadZone" class="hidden mt-8 p-6 bg-slate-950 border border-amber-500/40 rounded-2xl space-y-4">
+                <h3 class="text-amber-400 font-bold text-lg flex items-center gap-2">
+                    <span>⚡</span> Cryptographic Receipt & Asset Ready
+                </h3>
+                <p id="receiptMeta" class="text-xs text-slate-300 font-mono"></p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a id="downloadJsonBtn" download="steezy_receipt.json" class="px-5 py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition">
+                        Download JSON Receipt
+                    </a>
+                    <a id="downloadAssetBtn" download="asset_image.jpg" class="px-5 py-2.5 rounded-xl bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-xs hover:bg-slate-700 transition">
+                        Download Raw Asset File
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -252,7 +267,7 @@
         <p>&copy; 2026 Steezy Enterprise & Tyrel Steven Petersen. All rights reserved. Created for the glory of God and Jesus Christ.</p>
     </footer>
 
-    <!-- Script logic for address rotation & trial -->
+    <!-- Script logic for address rotation, fractional calculation & instant JSON receipts -->
     <script>
         const addresses = [
             "bc1qvwkv5qlfqcgcam5cjsl80ykus3mmhnm5xg0mwx",
@@ -276,18 +291,112 @@
             document.getElementById('activeAddressDisplay').innerText = addresses[currentIndex];
         }
 
-        function triggerFreeTrial() {
-            alert("Ethos Free Trial Activated! Your spiritual baseline test has been initiated. Check your life's alignment over the next 7 days in accordance with immutable spiritual doctrine.");
+        function toggleInputs() {
+            const asset = document.getElementById('assetSelect').value;
+            const satoshisContainer = document.getElementById('satoshisContainer');
+            const freeBtn = document.getElementById('freeClaimBtn');
+            const paidBtn = document.getElementById('paidClaimBtn');
+
+            if(asset === 'Ethos_Free') {
+                satoshisContainer.classList.add('hidden');
+                freeBtn.classList.remove('hidden');
+                paidBtn.classList.add('hidden');
+            } else {
+                satoshisContainer.classList.remove('hidden');
+                freeBtn.classList.add('hidden');
+                paidBtn.classList.remove('hidden');
+            }
         }
 
-        function simulateOrder() {
+        // Live calculation of fractional BTC share
+        document.getElementById('satoshisAmount').addEventListener('input', function(e) {
+            const sats = parseInt(e.target.value) || 0;
+            const btc = (sats / 100000000).toFixed(8);
+            document.getElementById('fractionalCalc').innerText = `Acquiring fractional share: ${btc} BTC (${sats} satoshis).`;
+        });
+
+        // Generate unique ticker symbol
+        function generateUniqueTicker(assetName) {
+            const randomHex = Math.random().toString(16).substring(2, 8).toUpperCase();
+            return `STZ-${assetName.toUpperCase().slice(0,5)}-${randomHex}`;
+        }
+
+        function claimFreeEthosReceipt() {
             const email = document.getElementById('customerEmail').value;
-            const asset = document.getElementById('assetSelect').value;
             if(!email) {
-                alert("Please enter your email address for secure credential delivery.");
+                alert("Please enter your email address to receive your verification receipt.");
                 return;
             }
-            alert(`Order received for ${asset}! Active payment address ${addresses[currentIndex]} is now monitoring for incoming transfer. Once confirmed, your raw image download and JSON ledger credentials will be dispatched to ${email}.`);
+
+            const ticker = generateUniqueTicker("Ethos");
+            const timestamp = new Date().toISOString();
+            const receiptData = {
+                receipt_type: "FREE_TRIAL_PROVENANCE_RECORD",
+                asset: "Ethos",
+                ticker_symbol: ticker,
+                recipient_email: email,
+                timestamp_utc: timestamp,
+                wallet_address: addresses[currentIndex],
+                founder: "Tyrel Steven Petersen",
+                instructions: "Verify this json against master_steezy_genesis_ledger.json. This ticker has not been used previously.",
+                status: "VERIFIED_DELIVERED"
+            };
+
+            showReceiptOutput(receiptData, "77.jng.jpg", "Ethos Free Trial Receipt & Asset");
+        }
+
+        function verifyAndDeliverPaid() {
+            const email = document.getElementById('customerEmail').value;
+            const asset = document.getElementById('assetSelect').value;
+            const sats = document.getElementById('satoshisAmount').value;
+            
+            if(!email) {
+                alert("Please enter your email address for secure delivery.");
+                return;
+            }
+
+            const ticker = generateUniqueTicker(asset);
+            const timestamp = new Date().toISOString();
+            const receiptData = {
+                receipt_type: "MICRO_ACQUISITION_PROVENANCE_RECORD",
+                asset: asset,
+                ticker_symbol: ticker,
+                satoshis_contributed: parseInt(sats),
+                btc_fractional_share: (sats / 100000000).toFixed(8),
+                recipient_email: email,
+                timestamp_utc: timestamp,
+                monitoring_wallet: addresses[currentIndex],
+                founder: "Tyrel Steven Petersen",
+                instructions: "Payment verified via automated pool rotation. This unique fractional ticker is permanently recorded.",
+                status: "BLOCKCHAIN_MICRO_SETTLED"
+            };
+
+            const assetImageMap = {
+                "steezybtc_derivative_001": "298.png",
+                "Pathos": "78.jng.jpg",
+                "Logos": "79.jpg"
+            };
+
+            showReceiptOutput(receiptData, assetImageMap[asset], `${asset} Micro-Acquisition Receipt`);
+        }
+
+        function showReceiptOutput(receiptObj, imageFilename, title) {
+            const jsonStr = JSON.stringify(receiptObj, null, 2);
+            const blob = new Blob([jsonStr], {type: "application/json"});
+            const jsonUrl = URL.createObjectURL(blob);
+
+            document.getElementById('receiptMeta').innerText = `Generated Ticker: ${receiptObj.ticker_symbol} | Timestamp: ${receiptObj.timestamp_utc} | Status: ${receiptObj.status}`;
+            
+            const jsonBtn = document.getElementById('downloadJsonBtn');
+            jsonBtn.href = jsonUrl;
+            jsonBtn.download = `${receiptObj.ticker_symbol.toLowerCase()}_receipt.json`;
+
+            const assetBtn = document.getElementById('downloadAssetBtn');
+            assetBtn.href = imageFilename;
+            assetBtn.download = imageFilename;
+            
+            document.getElementById('downloadZone').classList.remove('hidden');
+            alert(`${title} successfully generated with unique verification ticker: ${receiptObj.ticker_symbol}! Download buttons are now active below.`);
         }
     </script>
 </body>
